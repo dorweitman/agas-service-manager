@@ -5,9 +5,7 @@ from scores.score import Score
 
 
 class Event(ABC):
-    def __init__(self, name: str, event_date: str):
-        self.name = name
-        self.event_date = event_date
+    def __init__(self):
         self.scores: List[Score] = []
 
     @abstractmethod

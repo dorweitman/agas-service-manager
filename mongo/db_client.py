@@ -10,7 +10,7 @@ class MongoDBClient:
     def create_collection(self, collection_name: str):
         return self.db[collection_name]
 
-    def drop_collection(self, data: List[Dict], collection_name: str):
+    def insert_document(self, data: List[Dict], collection_name: str):
         self.db[collection_name].insert_many(data)
 
     def find_in_collection(self, collection_name: str, query: Dict):

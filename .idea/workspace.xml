@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="002f575b-7df0-4f74-ad36-72baff16da67" name="Default Changelist" comment="" />
+    <list default="true" id="002f575b-7df0-4f74-ad36-72baff16da67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/event_type_mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/event_type_mapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/pushups.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/pushups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/running.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/running.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/db_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/db_client.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +48,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1h5W8GiAiaSOqVKeXEBvnEoMKSB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -159,6 +198,29 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="408" y="144" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600434329846">
       <screen x="0" y="0" width="1280" height="680" />
@@ -176,38 +238,50 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="355" y="46" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1601120772228" />
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601134447963">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601226636728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601226636728" />
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1601236509319">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601134447963" />
-    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601134447962">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1601236509319">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601134447962" />
-    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601134447962">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1601236509319">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601134447962" />
-    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601134447963">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1601236509319">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601134447963" />
-    <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1601121280133">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1601236509320">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1259" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601121280133" />
-    <state width="1259" height="204" key="GridCell.Tab.1.center" timestamp="1601121280133">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1601236509320">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1259" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601121280133" />
-    <state width="1259" height="204" key="GridCell.Tab.1.left" timestamp="1601121280132">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1601236509320">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1259" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601121280132" />
-    <state width="1259" height="204" key="GridCell.Tab.1.right" timestamp="1601121280133">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1601236509320">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1259" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601121280133" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1601216559271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -216,10 +290,15 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1600094714282" />
-    <state x="336" y="72" width="609" height="536" key="find.popup" timestamp="1601117754317">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1" timestamp="1601234814502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1601234814502" />
+    <state x="554" y="103" width="731" height="650" key="find.popup" timestamp="1601228706664">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="336" y="72" width="609" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1601117754317" />
+    <state x="554" y="103" width="731" height="650" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601228706664" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1600982948793">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -230,13 +309,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/flask/api.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="10" />
+          <line>45</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/flask/api.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="19" />
+          <line>65</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/events/running.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/events/running.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

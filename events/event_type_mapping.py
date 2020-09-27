@@ -11,6 +11,6 @@ class EventMaker:
     def __init__(self, event_type: str):
         self.event_type: Type = EVENT_TYPE_MAPPING[event_type]
 
-    def make_event(self, name: str, event_date: str) -> Event:
-        event: Event = self.event_type(name, event_date)
+    def make_event(self) -> Event:
+        event: Event = self.event_type()
         return event

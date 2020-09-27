@@ -6,12 +6,15 @@ from scores.running_score import RunningScore
 
 
 class Running(Event):
-    def __init__(self, name: str, event_date: str):
-        super().__init__(name, event_date)
+    def __init__(self):
+        super().__init__()
 
     def score_from_json(self, params: Dict) -> "Score":
+        name = params["name"]
+        event_date = params["event_date"]
+
         army_id = params["army_id"]
-        distance = params["distance"]
+        distance = params["distance"] if "distance" in params else 3
 
         start_time = time.fromisoformat(params["start_time"])
         end_time = time.fromisoformat(params["end_time"])
@@ -22,4 +25,4 @@ class Running(Event):
 
         moed = params["moed"]
 
-        return RunningScore(army_id, self.event_date, distance, duration, moed, self.name)
+        return RunningScore(army_id, event_date, distance, duration, moed, name)

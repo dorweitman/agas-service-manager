@@ -3,13 +3,14 @@ from typing import List, Dict
 
 from bson import ObjectId
 from flask import Flask, request
+from flask_cors import CORS
 from pymongo.cursor import Cursor
 
 from events.event_type_mapping import EventMaker, EVENT_TYPE_MAPPING
 from mongo.db_client import MongoDBClient
 
 app = Flask(__name__)
-
+cors = CORS(app)
 
 class JSONEncoder(json.JSONEncoder):
     def default(self, o):
@@ -48,11 +49,10 @@ def show_person(army_id):
 @app.route("/person", methods=["POST"])
 def register_persons():
     if request.method == "POST":
-        data: Dict = request.json
-        persons: List = data["persons"]
+        persons: Dict = request.json
 
         db_client = MongoDBClient()
-        db_client.drop_collection(persons, "persons")
+        db_client.insert_document(persons, "persons")
 
         return _encode_data(persons)
 
@@ -60,17 +60,14 @@ def register_persons():
 @app.route("/event/<event_type>", methods=["POST", "GET"])
 def update_event(event_type):
     if request.method == "POST":
-        data: Dict = request.json
-        event_date = data["date"]
-        event_name = data["name"]
-        scores: List = data["scores"]
+        scores: Dict = request.json
 
-        event = EventMaker(event_type).make_event(event_name, event_date=event_date)
+        event = EventMaker(event_type).make_event()
         event.add_scores(scores)
         scores = event.publish_scores()
 
         db_client = MongoDBClient()
-        db_client.drop_collection(scores, event_type)
+        db_client.insert_document(scores, event_type)
 
         return _encode_data(scores)
     if request.method == "GET":
