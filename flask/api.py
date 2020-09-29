@@ -7,7 +7,6 @@ import pandas as pd
 from bson import ObjectId
 from flask import Flask, request
 from flask_cors import CORS
-from json2xml import json2xml
 from pymongo.cursor import Cursor
 
 from events.event_type_mapping import EventMaker, EVENT_TYPE_MAPPING
