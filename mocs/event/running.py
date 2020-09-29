@@ -16,8 +16,8 @@ if __name__ == '__main__':
         for person in persons:
             army_id = person["army_id"]
 
-            start_date = datetime.date(2019, 10, 1)
-            end_date = datetime.date(2020, 1, 1)
+            start_date = datetime.date(2020, 9, 1)
+            end_date = datetime.date(2020, 11, 1)
 
             time_between_dates = end_date - start_date
             days_between_dates = time_between_dates.days

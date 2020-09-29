@@ -18,8 +18,8 @@ if __name__ == '__main__':
 
         person = {
             "army_id": randint(8000000, 8900000),
-            "first_name": ''.join(random.choice(string.ascii_lowercase) for _ in range(4)),
-            "last_name": ''.join(random.choice(string.ascii_lowercase) for _ in range(4)),
+            "first_name": random.choice(["alon", "dor", "guy"]),
+            "last_name": random.choice(["katz", "weitman", "ben bassat"]),
             "birth_date": str(random_date),
             "gender": random.choice(["male", "female"]),
             "team": random.choice(["Badly", "Sayag", "Geffen", "Vainer", "Marom"])

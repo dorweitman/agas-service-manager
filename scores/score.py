@@ -21,7 +21,7 @@ class Score(ABC):
 
     def _extract_gender(self) -> str:
         db_client = MongoDBClient()
-        person = db_client.find_one_in_collection("persons", {"army_id": self.army_id})
+        person = list(db_client.find_in_collection("persons", {"army_id": int(self.army_id)}))[0]
         return person["gender"]
 
     def _extract_years_old(self) -> float:
