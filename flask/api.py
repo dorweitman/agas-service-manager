@@ -9,8 +9,10 @@ from pymongo.cursor import Cursor
 from events.event_type_mapping import EventMaker, EVENT_TYPE_MAPPING
 from mongo.db_client import MongoDBClient
 
+
 app = Flask(__name__)
 cors = CORS(app)
+
 
 class JSONEncoder(json.JSONEncoder):
     def default(self, o):
@@ -21,8 +23,8 @@ class JSONEncoder(json.JSONEncoder):
 
 def _encode_data(cursor: [Cursor, List]) -> Dict:
     requested_persons = {"data": []}
-    for object in cursor:
-        requested_persons["data"].append(object)
+    for element in cursor:
+        requested_persons["data"].append(element)
     return JSONEncoder().encode(requested_persons)
 
 
@@ -49,7 +51,7 @@ def show_person(army_id):
 @app.route("/person", methods=["POST"])
 def register_persons():
     if request.method == "POST":
-        persons: Dict = request.json
+        persons: List = request.json
 
         db_client = MongoDBClient()
         db_client.insert_document(persons, "persons")
@@ -60,7 +62,7 @@ def register_persons():
 @app.route("/event/<event_type>", methods=["POST", "GET"])
 def update_event(event_type):
     if request.method == "POST":
-        scores: Dict = request.json
+        scores: List = request.json
 
         event = EventMaker(event_type).make_event()
         event.add_scores(scores)
