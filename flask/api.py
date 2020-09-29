@@ -104,7 +104,7 @@ def update_event(event_type):
         return data
 
 
-@app.route("/export/<event_type>")
+@app.route("/export/event/<event_type>")
 def export_scheme(event_type):
     name = request.args.get("name", "")
     date = request.args.get("date", "")
@@ -114,7 +114,7 @@ def export_scheme(event_type):
     df = pd.DataFrame(table)
 
     directory = os.path.expanduser("~/Downloads")
-    file = f"{event_type}.xlsx"
+    file = f"{event_type}_{name}_{date}.xlsx"
 
     if not os.path.exists(directory):
         os.makedirs(directory)

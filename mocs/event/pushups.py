@@ -12,25 +12,26 @@ if __name__ == '__main__':
     pushups = PushUps()
 
     scores = []
-    for person in persons:
-        army_id = person["army_id"]
+    for name in ["first", "final"]:
+        for person in persons:
+            army_id = person["army_id"]
 
-        start_date = datetime.date(2019, 1, 1)
-        end_date = datetime.date(2020, 1, 1)
+            start_date = datetime.date(2019, 10, 1)
+            end_date = datetime.date(2020, 1, 1)
 
-        time_between_dates = end_date - start_date
-        days_between_dates = time_between_dates.days
-        random_number_of_days = random.randrange(days_between_dates)
-        random_date = start_date + datetime.timedelta(days=random_number_of_days)
+            time_between_dates = end_date - start_date
+            days_between_dates = time_between_dates.days
+            random_number_of_days = random.randrange(days_between_dates)
+            random_date = start_date + datetime.timedelta(days=random_number_of_days)
 
-        score = {
-            "army_id": army_id,
-            "event_date": str(random_date),
-            "name": "final",
-            "pushups": randint(1, 80),
-            "moed": random.choice(["a", "b", "other"])
-        }
-        scores.append(score)
+            score = {
+                "army_id": army_id,
+                "event_date": str(random_date),
+                "name": name,
+                "pushups": randint(1, 80),
+                "moed": random.choice(["a", "b", "other"])
+            }
+            scores.append(score)
     pushups.add_scores(scores)
     scores = pushups.publish_scores()
 
