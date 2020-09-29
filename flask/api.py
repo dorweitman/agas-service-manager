@@ -104,14 +104,17 @@ def update_event(event_type):
         return data
 
 
-@app.route("/export/<scheme>")
-def export_scheme(scheme):
+@app.route("/export/<event_type>")
+def export_scheme(event_type):
+    name = request.args.get("name", "")
+    date = request.args.get("date", "")
+
     db_client = MongoDBClient()
-    table = list(db_client.find_in_collection(scheme, {}))
+    table = list(db_client.find_in_collection(event_type, {"name": name, "date": date}))
     df = pd.DataFrame(table)
 
     directory = os.path.expanduser("~/Downloads")
-    file = f"{scheme}.xlsx"
+    file = f"{event_type}.xlsx"
 
     if not os.path.exists(directory):
         os.makedirs(directory)
