@@ -7,7 +7,7 @@ GRADING = {"male": {"max": 36, "min": -16.5}, "female": {"max": 30, "min": -32.5
 
 
 class PushUpsScore(Score):
-    def __init__(self, army_id: str, score_date: str, moed: str, pushups: int, name: str):
+    def __init__(self, army_id: int, score_date: str, moed: str, pushups: int, name: str):
         super().__init__(army_id, score_date, moed, name)
         self.pushups = pushups
         self.grade = self.calculate_grade(self.gender)

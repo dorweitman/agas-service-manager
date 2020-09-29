@@ -8,7 +8,7 @@ GRADING = {"male": {"max": timedelta(minutes=12, seconds=30), "min": timedelta(m
 
 
 class RunningScore(Score):
-    def __init__(self, army_id: str, score_date: str, distance: float, duration: timedelta, moed: str, name: str):
+    def __init__(self, army_id: int, score_date: str, distance: float, duration: timedelta, moed: str, name: str):
         super().__init__(army_id, score_date, moed, name)
         self.distance = distance
         self.duration = duration
