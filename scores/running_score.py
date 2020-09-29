@@ -1,4 +1,4 @@
-from datetime import timedelta
+from datetime import timedelta, datetime
 from typing import Dict
 
 from scores.score import Score
@@ -20,11 +20,15 @@ class RunningScore(Score):
             "army_id": self.army_id,
             "date": self.score_date,
             "distance": self.distance,
-            "duration": str(self.duration),
+            "duration": str((datetime.min + self.duration).time()),
+            "duration_in_minutes": self.duration.total_seconds() / 60,
             "moed": self.moed,
             "grade": self.grade,
             "passed": self.passed,
-            "name": self.name
+            "name": self.name,
+            "gender": self.gender,
+            "years_old": self.years_old,
+            "team": self.team
         }
 
     def calculate_grade(self, gender: str):

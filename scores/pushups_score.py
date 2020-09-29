@@ -21,7 +21,10 @@ class PushUpsScore(Score):
             "moed": self.moed,
             "grade": self.grade,
             "passed": self.passed,
-            "name": self.name
+            "name": self.name,
+            "gender": self.gender,
+            "years_old": self.years_old,
+            "team": self.team
         }
 
     def calculate_grade(self, gender: str):
