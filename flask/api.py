@@ -10,7 +10,7 @@ from flask_cors import CORS
 from pymongo.cursor import Cursor
 
 from events.event_type_mapping import EventMaker, EVENT_TYPE_MAPPING
-from guy.neighbores_finder import map_person_to_matches, RunScore
+from match.neighbores_finder import map_person_to_matches, RunScore
 from mongo.db_client import MongoDBClient
 
 
