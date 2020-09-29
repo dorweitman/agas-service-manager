@@ -41,7 +41,6 @@ def show_person(army_id):
     events = {}
     for event_type in EVENT_TYPE_MAPPING.keys():
         events[event_type] = list(db_client.find_in_collection(event_type, {"army_id": army_id}))
-    print(events)
 
     person_data = {"info": person_info, "events": events}
 

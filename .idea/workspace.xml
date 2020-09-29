@@ -26,11 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002f575b-7df0-4f74-ad36-72baff16da67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Agas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Agas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +189,13 @@
       <option name="presentableId" value="Default" />
       <updated>1599301272198</updated>
     </task>
+    <task id="LOCAL‎00001" summary="changed connection to mongo">
+      <created>1601363107581</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1601363107581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +222,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changed connection to mongo" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed connection to mongo" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="361" y="0" key="#api" timestamp="1601361924837">
       <screen x="0" y="0" width="1280" height="680" />
@@ -239,29 +247,33 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="355" y="46" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1601120772228" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1601363106608">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601363106608" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601226636728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601226636728" />
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601362636734">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601363669426">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601362636734" />
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601363669426" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601362636734">
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601363669425">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601362636734" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601363669425" />
     <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601362636734">
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601363669425">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601362636734" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601363669425" />
     <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601362636734">
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601363669426">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601362636734" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601363669426" />
     <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1601236509320">
       <screen x="0" y="0" width="1536" height="824" />
@@ -308,16 +320,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/flask/api.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/flask/api.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/events/running.py</url>
           <line>16</line>
