@@ -27,10 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="002f575b-7df0-4f74-ad36-72baff16da67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocs/event/pushups.py" beforeDir="false" afterPath="$PROJECT_DIR$/mocs/event/pushups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocs/event/running.py" beforeDir="false" afterPath="$PROJECT_DIR$/mocs/event/running.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocs/person/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/mocs/person/person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scores/score.py" beforeDir="false" afterPath="$PROJECT_DIR$/scores/score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask/api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,7 @@
       <recent name="C:\Users\alon4\PycharmProjects\Agas\events" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.running (1)">
+  <component name="RunManager" selected="Python.api">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Agas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,9 +171,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.api" />
         <item itemvalue="Python.running (1)" />
         <item itemvalue="Python.pushups" />
-        <item itemvalue="Python.api" />
         <item itemvalue="Python.person" />
         <item itemvalue="Python.neighbores_finder (1)" />
       </list>
@@ -247,7 +244,13 @@
       <option name="presentableId" value="LOCAL‎00009" />
       <updated>1601412766056</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL‎00010" summary="bug fix">
+      <created>1601417825499</created>
+      <option name="number" value="LOCAL‎00010" />
+      <option name="presentableId" value="LOCAL‎00010" />
+      <updated>1601417825499</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,7 +285,8 @@
     <MESSAGE value="no needed files" />
     <MESSAGE value="renaming" />
     <MESSAGE value="added excel filtering" />
-    <option name="LAST_COMMIT_MESSAGE" value="added excel filtering" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Notifications" timestamp="1601393009332">
@@ -309,33 +313,33 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="355" y="46" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1601415039452" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1601412765627">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1601417823902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601412765627" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601417823902" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601226636728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601226636728" />
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601417804671">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601458102679">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601417804671" />
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601458102679" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601417804670">
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601458102679">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601417804670" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601458102679" />
     <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601417804670">
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601458102679">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601417804670" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601458102679" />
     <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601417804670">
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601458102679">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601417804670" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601458102679" />
     <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
     <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1601415170420">
       <screen x="0" y="0" width="1280" height="680" />
@@ -361,10 +365,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601216559271" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1601412772412">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1601417832231">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601412772412" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601417832231" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1600094714282">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -5,7 +5,7 @@ from typing import List, Dict
 
 import pandas as pd
 from bson import ObjectId
-from flask import Flask, request
+from flask import Flask, request, send_file
 from flask_cors import CORS
 from pymongo.cursor import Cursor
 
@@ -121,7 +121,7 @@ def export_scheme(event_type):
 
     df.to_excel(os.path.join(directory, file))
 
-    return df.to_dict()
+    return send_file(os.path.join(directory, file), as_attachment=True)
 
 
 if __name__ == '__main__':
