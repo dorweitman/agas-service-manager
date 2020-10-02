@@ -1,9 +1,14 @@
 import datetime
 import random
-import string
 from random import randint
 
 from mongo.db_client import MongoDBClient
+
+
+def random_phone():
+    n = str(randint(10**7, 10**8 - 1))
+    return f"05{n[:1]}-{n[1:4]}-{n[4:]}"
+
 
 if __name__ == '__main__':
     persons = []
@@ -22,7 +27,8 @@ if __name__ == '__main__':
             "last_name": random.choice(["katz", "weitman", "ben bassat"]),
             "birth_date": str(random_date),
             "gender": random.choice(["male", "female"]),
-            "team": random.choice(["Badly", "Sayag", "Geffen", "Vainer", "Marom"])
+            "team": random.choice(["Badly", "Sayag", "Geffen", "Vainer", "Marom"]),
+            "phone": random_phone()
         }
 
         persons.append(person)

@@ -68,8 +68,9 @@ def find_partners(army_id):
         matching_person = db_client.find_one_in_collection("persons", {"army_id": match.army_id})
         first_name = matching_person["first_name"]
         last_name = matching_person["last_name"]
+        phone = matching_person["phone"]
         duration = str((datetime.min + timedelta(seconds=match.duration * 60)).time())
-        results.append({"first_name": first_name, "last_name": last_name, "duration": duration})
+        results.append({"first_name": first_name, "last_name": last_name, "duration": duration, "phone": phone})
     return {"matches": results}
 
 
@@ -122,6 +123,11 @@ def export_scheme(event_type):
     df.to_excel(os.path.join(directory, file))
 
     return df.to_dict()
+
+
+@app.route("/search/event/<event_type>")
+def search_event(event_type):
+    pass
 
 
 if __name__ == '__main__':
