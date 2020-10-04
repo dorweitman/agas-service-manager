@@ -76,7 +76,7 @@ def find_partners(army_id):
 @app.route("/person", methods=["POST"])
 def register_persons():
     if request.method == "POST":
-        persons: List = request.json["persons"]
+        persons: List = request.json
         for person in persons:
             person["name"] = f"{person['first_name']} {person['last_name']}"
             person.pop("first_name", None)
