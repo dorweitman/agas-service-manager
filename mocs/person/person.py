@@ -7,7 +7,7 @@ from mongo.db_client import MongoDBClient
 
 def random_phone():
     n = str(randint(10**7, 10**8 - 1))
-    return f"05{n[:1]}-{n[1:4]}-{n[4:]}"
+    return f"05{n}"
 
 
 if __name__ == '__main__':

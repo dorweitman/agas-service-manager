@@ -23,11 +23,11 @@ class RunningScore(Score):
             "duration": str((datetime.min + self.duration).time()),
             "duration_in_minutes": self.duration.total_seconds() / 60,
             "moed": self.moed,
-            "grade": self.grade,
+            "grade": round(self.grade, 1),
             "passed": self.passed,
             "name": self.name,
             "gender": self.gender,
-            "years_old": self.years_old,
+            "years_old": round(self.years_old),
             "team": self.team
         }
 

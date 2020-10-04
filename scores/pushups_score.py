@@ -19,11 +19,11 @@ class PushUpsScore(Score):
             "date": self.score_date,
             "pushups": self.pushups,
             "moed": self.moed,
-            "grade": self.grade,
+            "grade": round(self.grade, 1),
             "passed": self.passed,
             "name": self.name,
             "gender": self.gender,
-            "years_old": self.years_old,
+            "years_old": round(self.years_old),
             "team": self.team
         }
 
