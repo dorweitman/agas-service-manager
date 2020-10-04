@@ -134,6 +134,7 @@ def export_scheme(event_type):
 @app.route("/search")
 def search_event():
     search = request.args.get("search", "")
+    search = f"\"" + search + f"\""
 
     db_client = MongoDBClient()
     collections_names = db_client.db.list_collection_names()
