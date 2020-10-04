@@ -21,10 +21,13 @@ if __name__ == '__main__':
         random_number_of_days = random.randrange(days_between_dates)
         random_date = start_date + datetime.timedelta(days=random_number_of_days)
 
+        random_first_name = random.choice(["alon", "dor", "guy", "tomer", "daniel"])
+        random_last_name = random.choice(["katz", "weitman", "ben bassat", "ansher", "david"])
+        random_name = f"{random_first_name} {random_last_name}"
+
         person = {
-            "army_id": randint(8000000, 8900000),
-            "first_name": random.choice(["alon", "dor", "guy"]),
-            "last_name": random.choice(["katz", "weitman", "ben bassat"]),
+            "army_id": str(randint(8000000, 8900000)),
+            "name": random_name,
             "birth_date": str(random_date),
             "gender": random.choice(["male", "female"]),
             "team": random.choice(["Badly", "Sayag", "Geffen", "Vainer", "Marom"]),

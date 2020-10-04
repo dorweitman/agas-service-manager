@@ -18,3 +18,20 @@ class MongoDBClient:
 
     def find_one_in_collection(self, collection_name: str, query: Dict):
         return self.db[collection_name].find_one(query)
+
+
+if __name__ == '__main__':
+    db_client = MongoDBClient()
+
+    persons_indexes = [("name", "text"), ("gender", "text"), ("army_id", "text"), ("team", "text")]
+    events_indexes = [("name", "text"), ("gender", "text"), ("army_id", "text"), ("team", "text")]
+
+    persons = db_client.db["persons"]
+    runs = db_client.db["run"]
+    pushups = db_client.db["pushups"]
+
+    persons.create_index(persons_indexes)
+    runs.create_index(events_indexes)
+    pushups.create_index(events_indexes)
+
+    print("ok")

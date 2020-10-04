@@ -25,10 +25,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002f575b-7df0-4f74-ad36-72baff16da67" name="Default Changelist" comment="bug fix">
+    <list default="true" id="002f575b-7df0-4f74-ad36-72baff16da67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/pushups.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/pushups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/running.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/running.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mocs/person/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/mocs/person/person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/db_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/db_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scores/score.py" beforeDir="false" afterPath="$PROJECT_DIR$/scores/score.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +68,7 @@
       <recent name="C:\Users\alon4\PycharmProjects\Agas\events" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api">
+  <component name="RunManager" selected="Python.db_client">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Agas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="neighbores_finder (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="db_client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Agas" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +98,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AgasGuy-master" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mongo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AgasGuy-master/neighbores_finder.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mongo/db_client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.api" />
-        <item itemvalue="Python.running (1)" />
+        <item itemvalue="Python.db_client" />
         <item itemvalue="Python.pushups" />
+        <item itemvalue="Python.running (1)" />
         <item itemvalue="Python.person" />
-        <item itemvalue="Python.neighbores_finder (1)" />
+        <item itemvalue="Python.api" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +267,13 @@
       <option name="presentableId" value="LOCAL‎00012" />
       <updated>1601478967450</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL‎00013" summary="added person phone number">
+      <created>1601638790362</created>
+      <option name="number" value="LOCAL‎00013" />
+      <option name="presentableId" value="LOCAL‎00013" />
+      <updated>1601638790362</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,7 +309,8 @@
     <MESSAGE value="renaming" />
     <MESSAGE value="added excel filtering" />
     <MESSAGE value="bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
+    <MESSAGE value="added person phone number" />
+    <option name="LAST_COMMIT_MESSAGE" value="added person phone number" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Notifications" timestamp="1601393009332">
@@ -322,57 +333,57 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="363" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1600683915069" />
-    <state x="355" y="46" key="#xdebugger.evaluate" timestamp="1601415039452">
+    <state x="355" y="46" key="#xdebugger.evaluate" timestamp="1601796652287">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="355" y="46" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1601415039452" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1601635506920">
+    <state x="355" y="46" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1601796652287" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1601638789799">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601635506920" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601638789799" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601226636728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601226636728" />
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601638487768">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601829100047">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601638487768" />
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601829100047" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601638487768">
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601829100046">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601638487768" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601829100046" />
     <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601638487768">
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601829100046">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601638487768" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601829100046" />
     <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601638487768">
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601829100046">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601638487768" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601829100046" />
     <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1601486603030">
+    <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1601828865262">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601486603030" />
+    <state width="1259" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601828865262" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
-    <state width="1259" height="204" key="GridCell.Tab.1.center" timestamp="1601486603030">
+    <state width="1259" height="204" key="GridCell.Tab.1.center" timestamp="1601828865262">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601486603030" />
+    <state width="1259" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601828865262" />
     <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
-    <state width="1259" height="204" key="GridCell.Tab.1.left" timestamp="1601486603030">
+    <state width="1259" height="204" key="GridCell.Tab.1.left" timestamp="1601828865262">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601486603030" />
+    <state width="1259" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601828865262" />
     <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
-    <state width="1259" height="204" key="GridCell.Tab.1.right" timestamp="1601486603030">
+    <state width="1259" height="204" key="GridCell.Tab.1.right" timestamp="1601828865262">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601486603030" />
+    <state width="1259" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601828865262" />
     <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1601216559271">
       <screen x="0" y="0" width="1536" height="824" />
@@ -390,14 +401,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1601234814502" />
-    <state x="554" y="103" width="731" height="650" key="find.popup" timestamp="1601228706664">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="336" y="72" width="609" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1601117754317" />
-    <state x="554" y="103" width="731" height="650" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601228706664" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1601377179914">
+    <state x="336" y="72" width="612" height="536" key="find.popup" timestamp="1601796004013">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1601377179914" />
+    <state x="336" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1601796004013" />
+    <state x="554" y="103" width="731" height="650" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601228706664" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1601728842262">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1601728842262" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mongo/db_client.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -11,7 +11,7 @@ class PushUps(Event):
     def score_from_json(self, params: Dict) -> "Score":
         name = params["name"]
         event_date = params["event_date"]
-        army_id = int(params["army_id"])
+        army_id = params["army_id"]
         moed = params["moed"]
         pushups = int(params["pushups"])
 

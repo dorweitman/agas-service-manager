@@ -14,7 +14,7 @@ class Running(Event):
         name = params["name"]
         event_date = params["event_date"]
 
-        army_id = int(params["army_id"])
+        army_id = params["army_id"]
         distance = params["distance"] if "distance" in params else 3
 
         start_time = time.fromisoformat(params["start_time"])

@@ -66,23 +66,29 @@ def find_partners(army_id):
     results = []
     for match in matches:
         matching_person = db_client.find_one_in_collection("persons", {"army_id": match.army_id})
-        first_name = matching_person["first_name"]
-        last_name = matching_person["last_name"]
+        name = matching_person["name"]
         phone = matching_person["phone"]
         duration = str((datetime.min + timedelta(seconds=match.duration * 60)).time())
-        results.append({"first_name": first_name, "last_name": last_name, "duration": duration, "phone": phone})
+        results.append({"name": name, "duration": duration, "phone": phone})
     return {"matches": results}
 
 
 @app.route("/person", methods=["POST"])
 def register_persons():
     if request.method == "POST":
-        persons: List = request.json
+        persons: List = request.json["persons"]
+        for person in persons:
+            person["name"] = f"{person['first_name']} {person['last_name']}"
+            person.pop("first_name", None)
+            person.pop("last_name", None)
 
         db_client = MongoDBClient()
         db_client.insert_documents(persons, "persons")
 
-        return _encode_data(persons)
+        for person in persons:
+            person.pop("_id", None)
+
+        return {"persons": persons}
 
 
 @app.route("/event/<event_type>", methods=["POST", "GET"])
@@ -125,9 +131,18 @@ def export_scheme(event_type):
     return df.to_dict()
 
 
-@app.route("/search/event/<event_type>")
-def search_event(event_type):
-    pass
+@app.route("/search")
+def search_event():
+    search = request.args.get("search", "")
+
+    db_client = MongoDBClient()
+    collections_names = db_client.db.list_collection_names()
+
+    results = {}
+    for collection_name in collections_names:
+        results[collection_name] = list(db_client.find_in_collection(collection_name, {"$text": {"$search": search}}))
+
+    return results
 
 
 if __name__ == '__main__':
