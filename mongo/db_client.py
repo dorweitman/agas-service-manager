@@ -23,15 +23,17 @@ class MongoDBClient:
 if __name__ == '__main__':
     db_client = MongoDBClient()
 
-    persons_indexes = [("name", "text"), ("gender", "text"), ("army_id", "text"), ("team", "text")]
+    persons_indexes = [("name", "text"), ("gender", "text"), ("army_id", "text"), ("team", "text"), ("phone", "text")]
     events_indexes = [("name", "text"), ("gender", "text"), ("army_id", "text"), ("team", "text")]
 
     persons = db_client.db["persons"]
     runs = db_client.db["run"]
     pushups = db_client.db["pushups"]
 
+    persons.drop_indexes()
+    runs.drop_indexes()
+    pushups.drop_indexes()
+
     persons.create_index(persons_indexes)
     runs.create_index(events_indexes)
     pushups.create_index(events_indexes)
-
-    print("ok")

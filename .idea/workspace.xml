@@ -25,11 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002f575b-7df0-4f74-ad36-72baff16da67" name="Default Changelist" comment="">
+    <list default="true" id="002f575b-7df0-4f74-ad36-72baff16da67" name="Default Changelist" comment="fixed bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocs/person/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/mocs/person/person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scores/pushups_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/scores/pushups_score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scores/running_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/scores/running_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo/db_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo/db_client.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <recent name="C:\Users\alon4\PycharmProjects\Agas\events" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.running (1)">
+  <component name="RunManager" selected="Python.api">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Agas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.api" />
+        <item itemvalue="Python.db_client" />
         <item itemvalue="Python.running (1)" />
         <item itemvalue="Python.running_score" />
         <item itemvalue="Python.pushups" />
-        <item itemvalue="Python.api" />
-        <item itemvalue="Python.db_client" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +286,13 @@
       <option name="presentableId" value="LOCAL‎00016" />
       <updated>1601832884654</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL‎00017" summary="fixed bug">
+      <created>1601843587168</created>
+      <option name="number" value="LOCAL‎00017" />
+      <option name="presentableId" value="LOCAL‎00017" />
+      <updated>1601843587168</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,62 +359,66 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="355" y="46" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1601796652287" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1601832883205">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1601878852393">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601832883205" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1601878852393" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601226636728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601226636728" />
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601843532788">
+    <state x="502" y="244" key="Github.Dialog.Accounts.Choose" timestamp="1601843732026">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601843532788" />
+    <state x="502" y="244" key="Github.Dialog.Accounts.Choose/0.0.1280.680@0.0.1280.680" timestamp="1601843732026" />
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1601887070302">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601887070302" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601843532787">
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1601887070302">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601843532787" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601887070302" />
     <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601843532787">
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1601887070302">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601843532787" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601887070302" />
     <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601843532788">
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1601887070302">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601843532788" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601887070302" />
     <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601236509319" />
-    <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1601829998389">
+    <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1601845101970">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601829998389" />
+    <state width="1259" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601845101970" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
-    <state width="1259" height="204" key="GridCell.Tab.1.center" timestamp="1601829998389">
+    <state width="1259" height="204" key="GridCell.Tab.1.center" timestamp="1601845101970">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601829998389" />
+    <state width="1259" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601845101970" />
     <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
-    <state width="1259" height="204" key="GridCell.Tab.1.left" timestamp="1601829998388">
+    <state width="1259" height="204" key="GridCell.Tab.1.left" timestamp="1601845101969">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601829998388" />
+    <state width="1259" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601845101969" />
     <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
-    <state width="1259" height="204" key="GridCell.Tab.1.right" timestamp="1601829998389">
+    <state width="1259" height="204" key="GridCell.Tab.1.right" timestamp="1601845101970">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601829998389" />
+    <state width="1259" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601845101970" />
     <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601236509320" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1601216559271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601216559271" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1601831932786">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1601843896754">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601831932786" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1601843896754" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1600094714282">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -424,20 +432,13 @@
     </state>
     <state x="336" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1601796004013" />
     <state x="554" y="103" width="731" height="650" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601228706664" />
+    <state x="409" y="186" key="git4idea.ui.GitTagDialog" timestamp="1601843658774">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="409" y="186" key="git4idea.ui.GitTagDialog/0.0.1280.680@0.0.1280.680" timestamp="1601843658774" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1601829417703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1601829417703" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mongo/db_client.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
