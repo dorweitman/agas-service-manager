@@ -21,6 +21,7 @@ class RunningScore(Score):
             "date": self.score_date,
             "distance": self.distance,
             "duration": str((datetime.min + self.duration).time()),
+            "duration_in_minutes": self.duration.total_seconds() / 60,
             "moed": self.moed,
             "grade": round(self.grade, 1),
             "passed": self.passed,
