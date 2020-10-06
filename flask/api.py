@@ -13,7 +13,6 @@ from events.event_type_mapping import EventMaker, EVENT_TYPE_MAPPING
 from match.neighbores_finder import map_person_to_matches, RunScore
 from mongo.db_client import MongoDBClient
 
-
 app = Flask(__name__)
 cors = CORS(app)
 
@@ -91,24 +90,26 @@ def register_persons():
         return {"persons": persons}
 
 
-@app.route("/event/<event_type>", methods=["POST", "GET"])
+@app.route("/event/<event_type>", methods=["POST"])
 def update_event(event_type):
-    if request.method == "POST":
-        scores: List = request.json
+    scores: List = request.json
 
-        event = EventMaker(event_type).make_event()
-        event.add_scores(scores)
-        scores = event.publish_scores()
+    event = EventMaker(event_type).make_event()
+    event.add_scores(scores)
+    scores = event.publish_scores()
 
-        db_client = MongoDBClient()
-        db_client.insert_documents(scores, event_type)
+    db_client = MongoDBClient()
+    db_client.insert_documents(scores, event_type)
 
-        return _encode_data(scores)
-    if request.method == "GET":
-        db_client = MongoDBClient()
-        scores = db_client.find_in_collection(event_type, {})
-        data = {"scores": [score for score in scores]}
-        return data
+    return _encode_data(scores)
+
+
+@app.route("/event/<event_type>", methods=["GET"])
+def get_event(event_type):
+    db_client = MongoDBClient()
+    scores = db_client.find_in_collection(event_type, {})
+    data = {"scores": [score for score in scores]}
+    return data
 
 
 @app.route("/export/event/<event_type>")
