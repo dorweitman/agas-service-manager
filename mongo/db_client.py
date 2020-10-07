@@ -14,6 +14,8 @@ class MongoDBClient:
         self.db[collection_name].insert_many(data)
 
     def find_in_collection(self, collection_name: str, query: Dict):
+        if collection_name == "run":
+            return self.db[collection_name].find(query, {"_id": 0, "duration_in_minutes": 0})
         return self.db[collection_name].find(query, {"_id": 0})
 
     def find_one_in_collection(self, collection_name: str, query: Dict):
