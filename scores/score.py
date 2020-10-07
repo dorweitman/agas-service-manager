@@ -7,7 +7,7 @@ from mongo.db_client import MongoDBClient
 
 class Score(ABC):
     def __init__(self, army_id: int, score_date: str, moed: str, name: str):
-        self.army_id = army_id
+        self.army_id = str(army_id)
         self.score_date = score_date
         self.moed = moed
         self.name = name

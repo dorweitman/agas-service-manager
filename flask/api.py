@@ -81,6 +81,7 @@ def register_persons():
             person["name"] = f"{person['first_name']} {person['last_name']}"
             person.pop("first_name", None)
             person.pop("last_name", None)
+            person["army_id"] = str(person["army_id"])
 
         db_client = MongoDBClient()
         db_client.insert_documents(persons, "persons")
